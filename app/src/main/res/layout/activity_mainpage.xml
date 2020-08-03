@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".mainpage">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading"
+        android:layout_width="371dp"
+        android:layout_height="225dp"
+        android:src="@drawable/loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="342dp"
+        android:layout_height="340dp"
+        android:src="@drawable/newspagegif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressbarimg"
+        android:layout_width="375dp"
+        android:layout_height="389dp"
+        android:layout_marginVertical="100dp"
+        android:src="@drawable/marketing_hero_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="211dp"
+        android:layout_height="47dp"
+        android:background="#16BBED"
+        android:drawableLeft="@drawable/ic_baseline_help_outline_24"
+        android:fontFamily="@font/baloo"
+        android:paddingLeft="5sp"
+        android:paddingTop="5sp"
+        android:src="@drawable/stat"
+        android:text="Recent news"
+
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="213dp"
+        android:layout_height="51dp"
+        android:background="#C71EDA"
+        android:drawableLeft="@drawable/ic_baseline_sms_24"
+        android:fontFamily="@font/baloo"
+        android:paddingLeft="5sp"
+        android:paddingTop="5sp"
+        android:paddingRight="2sp"
+        android:text=" OTP VERIFICATION"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="213dp"
+        android:layout_height="51dp"
+        android:background="#15AE18"
+        android:drawableLeft="@drawable/ic_baseline_pin_drop_24"
+        android:fontFamily="@font/baloo"
+        android:paddingLeft="5sp"
+        android:paddingTop="5sp"
+        android:text="STATUS TRACKING"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="347dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="Main Dashboard"
+        android:textAlignment="center"
+        android:textColor="#1E88E5"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="336dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/spinnaker"
+        android:text="Preparing Dashboard ..."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#831E8C"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.423" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

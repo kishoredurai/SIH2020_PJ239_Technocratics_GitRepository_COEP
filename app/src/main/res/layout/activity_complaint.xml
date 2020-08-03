@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="Complaint">
+
+
+    <TextView
+        android:id="@+id/phonenumber3"
+        android:layout_width="69dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:hint="@string/mobile_no_on_which_international_call_received"
+        android:importantForAutofill="no"
+        android:inputType="number|phone"
+        android:paddingLeft="8dp"
+        android:paddingTop="11dp"
+        android:text="  +91"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:hint="Mobile Numer"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:maxLength="10"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <EditText
+        android:id="@+id/r_number"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@drawable/editext"
+        android:ems="20"
+        android:hint="@string/received_number"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        android:background="@drawable/ic_calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <Button
+        android:id="@+id/btMsgsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1A4BDC"
+        android:onClick="onSend"
+        android:text="@string/send1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="dd/mm/yy" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="219dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btMsgsend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="AM or PM" />
+
+    <AutoCompleteTextView
+        android:id="@+id/country"
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/editext"
+        android:completionHint="Select a country"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Country"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/r_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/state"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/editext"
+        android:completionHint="Select a State"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="State"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="236dp"
+        android:layout_height="111dp"
+        android:background="@drawable/editext"
+        android:hint="  Description (Max Length 100)"
+        android:maxLength="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtime"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="191dp"
+        android:layout_height="52dp"
+        android:background="@drawable/editext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+</androidx.constraintlayout.widget.ConstraintLayout>

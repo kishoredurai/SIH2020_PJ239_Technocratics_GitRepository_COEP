@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_sc_medium</item>
+        <item>@font/amaranth_bold</item>
+        <item>@font/atomic_age</item>
+        <item>@font/average_sans</item>
+        <item>@font/baloo</item>
+        <item>@font/baloo_thambi</item>
+        <item>@font/convergence</item>
+        <item>@font/courgette</item>
+        <item>@font/coustard</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/libre_franklin_thin</item>
+        <item>@font/pt_sans_caption</item>
+        <item>@font/space_mono_bold</item>
+        <item>@font/spinnaker</item>
+    </array>
+</resources>
